@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --black-color: black;
+  --white-color: white;
+  --dark-color: #0a2f49;
+  --beige-color: #c5b399;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+.link {
+  color: var(--black-color);
+  transition: color 0.3s;
+}
+.link:hover {
+  color: var(--beige-color) !important;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  background: rgb(5, 28, 46);
+  background: linear-gradient(90deg, rgba(5, 28, 46, 1) 0%, rgba(13, 50, 79, 1) 35%, rgba(23, 78, 120, 1) 100%);
+}
+
+.active {
+  color: var(--beige-color) !important;
+  font-weight: 700;
+}
+
+header {
+  background-color: #ddd0c7;
+}
+
+.about-me {
+  background: rgb(5, 28, 46);
+  background: linear-gradient(90deg, rgba(5, 28, 46, 1) 0%, rgba(13, 50, 79, 1) 35%, rgba(23, 78, 120, 1) 100%);
+  color: var(--white-color);
+}
+
+.offer,
+.therapy {
+  background-color: #ddd0c7;
+}
+footer {
+  background: rgb(5, 28, 46);
+  background: linear-gradient(90deg, rgba(5, 28, 46, 1) 0%, rgba(13, 50, 79, 1) 35%, rgba(23, 78, 120, 1) 100%);
+  color: var(--white-color);
+}
+
+iframe {
+  width: 100%;
+}
+
+/* @media (min-width: 400px) and (max-width: 992px) {
+} */
