@@ -8,7 +8,7 @@ html {
   --black-color: black;
   --white-color: white;
   --dark-color: #0a2f49;
-  --beige-color: #c5b399;
+  --beige-color: #e7ddd5;
 }
 
 body {
@@ -25,7 +25,7 @@ a {
   transition: color 0.3s;
 }
 .link:hover {
-  color: var(--beige-color) !important;
+  color: #de3421 !important;
 }
 
 ul {
@@ -37,13 +37,29 @@ nav {
   background: linear-gradient(90deg, rgba(5, 28, 46, 1) 0%, rgba(13, 50, 79, 1) 35%, rgba(23, 78, 120, 1) 100%);
 }
 
+img {
+  max-width: 100%;
+}
+
+.text-beige {
+  color: var(--beige-color) !important;
+}
+
+.text-blue {
+  color: var(--dark-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--beige-color) !important;
+}
+
 .active {
   color: var(--beige-color) !important;
   font-weight: 700;
 }
 
 header {
-  background-color: #ddd0c7;
+  background-color: var(--beige-color);
 }
 
 .about-me {
@@ -54,7 +70,7 @@ header {
 
 .offer,
 .therapy {
-  background-color: #ddd0c7;
+  background-color: var(--beige-color);
 }
 footer {
   background: rgb(5, 28, 46);
@@ -65,6 +81,23 @@ footer {
 iframe {
   width: 100%;
 }
+
+.reviews-box {
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px #2e2e2e2e;
+}
+.bi-quote {
+  color: var(--dark-color);
+}
+
+.contact {
+  background-color: #e7ddd5;
+}
+
+/* .contact-box {
+  padding: 2px;
+  max-width: 360px;
+} */
 
 /* @media (min-width: 400px) and (max-width: 992px) {
 } */
