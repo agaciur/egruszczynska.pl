@@ -17,7 +17,7 @@
 
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <nav class="py-3 navbar navbar-expand-lg" data-bs-theme="dark">
+    <nav class="py-3 navbar navbar-expand-lg" data-bs-theme="dark" id="navbar">
         <div class="container">
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -39,7 +39,8 @@
                         <a class="text-white nav-link" href="#offer">oferta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-white nav-link" href="#contact">kontakt</a>
+                        <a class="text-white nav-link" href="#contact" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown">kontakt</a>
                     </li>
 
                 </ul>
@@ -50,11 +51,12 @@
     <header id="home" class="py-5">
         <div class="container">
             <div class="d-lg-flex text-center">
-                <img class="mx-auto py-5 rounded-pill image-fluid" src="./img/eg.jpeg" alt="Ewelina Gruszczyńska">
+                <img class="mx-auto pb-4 py-lg-5 rounded-pill image-fluid" src="./img/eg.jpeg"
+                    alt="Ewelina Gruszczyńska">
                 <div class="p-1 p-lg-5 d-flex flex-column justify-content-center">
                     <h1 class="fw-bold pb-3">Nazywam się Ewelina Gruszczyńska, jestem psychologiem i
                         psychoterapeutką.</h1>
-                    <p class="text-center fs-4"> Zapraszam
+                    <p class="text-center text-header"> Zapraszam
                         do gabinetu w Krakowie oraz online (dla osób które nie mają możliwości uczestniczenia w
                         wizytach stacjonarnych). Aby umówić wizytę proszę o kontakt e.g.psychoterapia@gmail.com lub
                         telefonicznie.</p>
@@ -66,7 +68,7 @@
         <section class="py-4 about-me" id="aboutme">
             <div class="container py-5">
                 <h2 class="py-3 text-center fw-bold m-0 text-beige text-uppercase">O mnie</h2>
-                <div class="fs-4 px-3">
+                <div class="px-3">
                     <p class="pt-3">Ukończyłam z wyróżnieniem 5-letnie studia magisterskie ze specjalnością kliniczną i
                         sądową w
                         Krakowskiej Akademii im. A. Frycza- Modrzewskiego. Pracuje w nurcie psychodynamiczno- systemowym
@@ -88,10 +90,10 @@
             </div>
 
         </section>
-        <section class="py-5 therapy" id="therapy">
-            <div class="py-3 container pt-5 text-center">
+        <section class="pt-5 therapy" id="therapy">
+            <div class="py-3 container text-center">
                 <h2 class="text-blue pb-4 fw-bold text-uppercase">Jak wyglądają wizyty?</h2>
-                <p class="fs-4 m-0">Pierwsze 3 spotkania mają charakter konsultacji w trakcie których możemy się poznać
+                <p class="m-0">Pierwsze spotkania mają charakter konsultacji w trakcie których możemy się poznać
                     i
                     omówić cele z
                     jakimi się Państwo zgłaszają. Podejmujemy wtedy decyzję o rozpoczęciu psychoterapii lub skorzystaniu
@@ -99,18 +101,18 @@
             </div>
         </section>
         <section class="py-5 offer" id="offer">
-            <div class="pb-5 container text-center">
+            <div class="container text-center">
                 <h2 class="pb-4 fw-bold text-uppercase text-blue">Oferta</h2>
-                <p class="fs-4">Sesja psychoterapii i konsultacja psychologiczna: <span class="fw-bold">180 zł za 50
+                <p>Sesja psychoterapii i konsultacja psychologiczna: <span class="fw-bold">180 zł za 50
                         min</span>
 
 
-                <div class="fs-5 pt-4">
-                    <h5 class="py-3 fs-4 fw-bold">
+                <div class="pt-4">
+                    <h5 class="py-3 fw-bold">
                         Metody płatności:
                     </h5>
                     <p> <span class="fw-bold">Blik na nr:</span> 880 233 002</p>
-                    <p><span class="fw-bold">Przelew na nr:</span> 00000000000000</p>
+                    <p><span class="fw-bold">Przelew na nr:</span> 95 1020 2892 0000 5602 0917 2323 </p>
                     <p class="fw-bold">Gotówka</>
                 </div>
                 </p>
@@ -119,32 +121,42 @@
         <section>
             <div class="py-5 container">
                 <h2 class="py-4 text-center text-uppercase fw-bold">Opinie</h2>
-                <div class="my-5 p-5 reviews-box">
+                <div class="my-5 p-4 p-xl-5 reviews-box">
                     <i class="fs-1 bi bi-quote"></i>
-                    <p class="pt-4 fs-5">Pani Ewelina jest bardzo zaangażowana w proces terapii, potrafi uważnie
-                        słuchać,
-                        jest empatyczna,
-                        profesjonalna, bardzo zwraca uwagę na etykę, zależy jej na dobru pacjenta. Czułam się w
-                        gabinecie bezpiecznie, pomogła mi rozwiązać problem z którym męczyłam się od dawna. Nie mam
-                        żadnych zastrzeżeń.</p>
-                    <p class="fs-4 fw-bold">A.L.</p>
+                    <p class="pt-4">Na terapię do pani Eweliny chodzę już ponad półtora roku. Przez ten czas pomogła mi
+                        przepracować wiele tematów i emocji, które były dla mnie bardzo trudne. I choć nadal mam przed
+                        sobą sporo pracy do wykonania, już dostrzegam w sobie ogromną zmianę. Pani Ewelina uważnie
+                        słucha tego, co mam do powiedzenia, daje mi przestrzeń, aby w ciszy zastanowić się nad tym, co
+                        chcę przekazać, a także zadaje trafne pytania, które pozwalają mi lepiej zrozumieć siebie i
+                        swoje reakcje na różne życiowe sytuacje. Spotkania z panią Eweliną naprawdę wiele mi dają. Jest
+                        ona osobą empatyczną, uważną i skupioną na rozmówcy. Potrafi uważnie słuchać, wychwytywać rzeczy
+                        istotne i skłaniać do refleksji. Podczas terapii wykazuje się pełnym profesjonalizmem, a ja
+                        czuję się bezpiecznie i komfortowo - oczywiście na tyle na ile pozwala mi niełatwa tematyka
+                        naszych spotkań. Polecam panią Ewelinę jako wspaniałą terapeutkę!</p>
+                    <p class="fw-bold">Anna</p>
                 </div>
-                <div class="my-5 p-5 reviews-box">
+                <div class="my-5 p-4 p-xl-5 reviews-box">
                     <i class="fs-1 bi bi-quote"></i>
-                    <p class="pt-4 fs-5">Najważniejszym elementem terapii w którym Pani Ewelina mi pomogła był proces
-                        zrozumienia mnie samego i dlaczego ludzie pozwalają sobie na takie, a nie inne traktowanie mnie
-                        - brak umiejętności stawiania granic ludziom. Podczas sesji była skoncentrowana, słuchała jak i
-                        reagowała na potrzeby moje (np. nie drążyła tematu, gdy poprosiłem o chwilę na uspokojenie się).
-                        Bardzo cenię sobie w Pani Ewelinie, że już na początku poinformowała mnie, że jeśli nie będzie w
-                        stanie mi pomóc - skieruje mnie do specjalisty z zakresu moich problemów. Już to wzbudziło moje
-                        duże zaufanie, że jest to Specjalistka, która chce faktycznie mi pomóc, a nie tylko zarobić.
-                        Jeszcze mam nad czym pracować, ale dzięki Pani Ewelinie komfort mojego życia bardzo mocno się
-                        podniósł. Dziękuję!</p>
-                    <p class="fs-4 fw-bold">Jakub</p>
+                    <p class="pt-4">Na początku przez pierwsze 3 spotkania Pani Ewelina dała mi się w spokoju
+                        wypowiedzieć. Nie przerywała i w pełni wysłuchała o moim problemie, będąc w pełni zaangażowana w
+                        to co mówię i robiąc notatki. Po wstępnym zapoznaniu się z moim problemem bardzo się cieszę że
+                        podjęła się mojego leczenia.
+
+                        Jestem bardzo zadowolony z terapii, którą prowadzi Pani Ewelina. Czuję że w pełni mogę jej
+                        zaufać i powiedzieć wszystko co mnie dręczy nie ważne jak wydawałoby się mi dziwne lub
+                        wstydliwe. Pani Ewelina zawsze podchodzi do tego profesjonalnie i z wyczuciem. Zadaje bardzo
+                        trafne pytania, które pomagają mi rozpracować i zrozumieć ciężkie dla mnie tematy emocjonalne.
+                        Pomimo mojego gadulstwa udaje się jej nadążyć i zrozumieć co jej chce przekazać. Paradoksalnie
+                        to jest nie lada wyczyn i mało kto to potrafi :D.
+
+                        Podsumowując, mogę szczerze polecić Panią Ewelinę bo widać że robi to wszystko z powołania i
+                        zależy jej przede wszystkim na pomocy pacjentowi.
+                        W swojej pracy oddaje kawałek swojego serca :)</p>
+                    <p class="fw-bold">Paweł</p>
                 </div>
-                <div class="my-5 p-5 reviews-box">
+                <div class="my-5 p-4 p-xl-5 reviews-box">
                     <i class="fs-1 bi bi-quote"></i>
-                    <p class="pt-4 fs-5">Najważniejszym elementem terapii w którym Pani Ewelina mi pomogła był
+                    <p class="pt-4">Najważniejszym elementem terapii w którym Pani Ewelina mi pomogła był
                         proces
                         zrozumienia mnie samego i dlaczego ludzie pozwalają sobie na takie, a nie inne traktowanie
                         mnie
@@ -160,7 +172,7 @@
                         Jeszcze mam nad czym pracować, ale dzięki Pani Ewelinie komfort mojego życia bardzo mocno
                         się
                         podniósł. Dziękuję!</p>
-                    <p class="fs-4 fw-bold">Dagmara</p>
+                    <p class="fw-bold">Dagmara</p>
                 </div>
 
 
@@ -168,33 +180,36 @@
         </section>
 
         <section class="py-5 contact" id="contact">
-            <div class="container">
+            <div class="py-4 container">
                 <h2 class="pb-4 fw-bold m-0 text-center text-uppercase">Kontakt</h2>
-                <div class="d-lg-flex justify-content-between align-items-center">
+                <div class="d-xl-flex py-xl-5 justify-content-between align-items-center">
                     <div class="py-3 contact-box text-center">
                         <a class="link d-flex flex-column align-items-center" href="tel:+48880233002">
-                            <i class="bi bi-telephone fs-1"></i>
-                            <p class="fs-4">+48 880 233 002</p>
+                            <i class="bi bi-telephone-fill fs-1"></i>
+                            <span class="d-block">+48 880 233 002</span>
                         </a>
                     </div>
                     <div class="py-3 contact-box ">
                         <a class="link d-flex flex-column align-items-center" href="mailto:e.g.psychoterapia@gmail.com">
-                            <i class="bi bi-envelope-at fs-1"></i>
-                            <p class="fs-4">e.g.psychoterapia@gmail.com</p>
+                            <i class="bi bi-envelope-at-fill fs-1"></i>
+                            <span class="d-block">e.g.psychoterapia@gmail.com</span>
                         </a>
                     </div>
                     <div class="py-3 contact-box text-center">
-                        <a href="https://join.skype.com/invite/eboQRKgfnH78" target="_blank"> <i
-                                class="link bi bi-skype fs-1"></i></a>
+                        <a class="link" href="https://join.skype.com/invite/eboQRKgfnH78" target="_blank"> <i
+                                class="bi bi-skype fs-1"></i>
+                            <span class="d-block text-skype">https://join.skype.com/invite/eboQRKgfnH78</span>
+                        </a>
                     </div>
                     <div class="py-3 contact-box text-center">
-                        <a class="fs-4 fw-bold link"
+                        <a class="link"
                             href="https://www.znanylekarz.pl/ewelina-gruszczynska-2/psycholog-psychoterapeuta/krakow"
-                            target="_blank">ZnanyLekarz</a>
+                            target="_blank"><i class="fs-1 bi bi-person-circle"></i> <span
+                                class="d-block">ZnanyLekarz</span></a>
                     </div>
                 </div>
-                <div class="py-3 fs-4 text-center">
-                    <i class="fs-1 bi bi-house"></i>
+                <div class="py-3 text-center">
+                    <i class="fs-1 bi bi-house-fill"></i>
                     <p class="fw-bold m-0">Gabinet Kraków Krowodrza</p>
                     <p class="m-0">ul. Zdrowa 24</p>
                     <p class="m-0">31-216 Kraków</p>
@@ -211,7 +226,7 @@
 
     </main>
 
-    <footer class="p-4 fs-4 text-center">
+    <footer class="p-4 text-center">
         <p class="m-0">Ewelina Gruszczyńska | &copy; <span class="footer-year"></span></p>
     </footer>
 

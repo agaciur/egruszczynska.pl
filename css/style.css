@@ -62,6 +62,10 @@ header {
   background-color: var(--beige-color);
 }
 
+.text-header {
+  font-size: 20px;
+}
+
 .about-me {
   background: rgb(5, 28, 46);
   background: linear-gradient(90deg, rgba(5, 28, 46, 1) 0%, rgba(13, 50, 79, 1) 35%, rgba(23, 78, 120, 1) 100%);
@@ -71,11 +75,6 @@ header {
 .offer,
 .therapy {
   background-color: var(--beige-color);
-}
-footer {
-  background: rgb(5, 28, 46);
-  background: linear-gradient(90deg, rgba(5, 28, 46, 1) 0%, rgba(13, 50, 79, 1) 35%, rgba(23, 78, 120, 1) 100%);
-  color: var(--white-color);
 }
 
 iframe {
@@ -91,13 +90,29 @@ iframe {
 }
 
 .contact {
-  background-color: #e7ddd5;
+  background-color: var(--beige-color);
 }
 
-/* .contact-box {
-  padding: 2px;
-  max-width: 360px;
-} */
+footer {
+  background: rgb(5, 28, 46);
+  background: linear-gradient(90deg, rgba(5, 28, 46, 1) 0%, rgba(13, 50, 79, 1) 35%, rgba(23, 78, 120, 1) 100%);
+  color: var(--white-color);
+}
 
-/* @media (min-width: 400px) and (max-width: 992px) {
-} */
+@media (max-width: 400px) {
+  .text-skype {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-header {
+    font-size: 26px;
+  }
+}
