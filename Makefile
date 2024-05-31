@@ -53,4 +53,6 @@ prepare_deploy: git-revision
 
 
 deploy:
+	echo -e "\n\x1B[96m============================================= \x1B[1m\x1B[5mDeployment start\x1B[0m\x1B[96m =============================================\x1B[39m"
 	make prepare_deploy DOMAIN='egruszczynska.pl' SSH_HOST='h5'
+	echo -e "\x1B[96m============================================= \x1B[1m\x1B[5mDeployment finish\x1B[0m\x1B[96m ============================================\x1B[39m\n"
